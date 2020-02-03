@@ -44,7 +44,7 @@ public class Customer extends AuditEntity implements Serializable {
     @ElementCollection
     private List<ContactDetails> contactDetails;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.ALL}, orphanRemoval = true)
+    @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.ALL}, orphanRemoval = true, mappedBy = "customer")
     @JsonIgnore
     private List<Address> addressesList;
 
