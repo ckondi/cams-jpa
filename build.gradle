@@ -20,15 +20,15 @@ dependencies {
 
     compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa'
 
-
     compile group: 'mysql', name: 'mysql-connector-java'
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
 
     testCompile 'com.jayway.jsonpath:json-path'
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
-    compileOnly 'org.projectlombok:lombok:1.18.8'
-    annotationProcessor 'org.projectlombok:lombok:1.18.8'
-
+    testCompile group: 'junit', name: 'junit'
+    testImplementation(group: 'com.h2database', name: 'h2')
 
 }
 
