@@ -17,6 +17,7 @@ import org.mockito.junit.MockitoJUnitRunner;
 
 import java.time.Instant;
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -72,6 +73,11 @@ public class CustomerServiceImplTest {
 
     @Test
     public void update() {
+        LocalDate today = LocalDate.now();
+
+        String formattedDate = today.format(DateTimeFormatter.ofPattern("dd-MMM-yy"));
+
+        System.out.println(formattedDate);
     }
 
     private List<Customer> createCustomerWithContactDetails(Long... ids) {
