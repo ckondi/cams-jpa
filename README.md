@@ -2,6 +2,4 @@
 CustomerAddressManagement-JPA
 
 ## How to build locally
-gradlew clean build
-gradlew.bat clean build
-
+gradlew clean build OR gradlew.bat clean build
