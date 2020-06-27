@@ -28,7 +28,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @ActiveProfiles("test")
-@TestPropertySource(locations="classpath:application-test.properties")
+@TestPropertySource(locations="classpath:application-test.yml")
 class AddressRepositoryTest {
 
     @Autowired

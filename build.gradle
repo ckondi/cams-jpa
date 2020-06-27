@@ -30,7 +30,7 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test')
 
     testCompile group: 'junit', name: 'junit'
-    testImplementation(group: 'com.h2database', name: 'h2')
+    implementation(group: 'com.h2database', name: 'h2')
 
 }
 

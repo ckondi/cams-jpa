@@ -1,0 +1,48 @@
+## Spring DATASOURCE
+#spring.datasource.url = jdbc:mysql://localhost:3306/cams?useSSL=false&serverTimezone=UTC
+#spring.datasource.username = cams
+#spring.datasource.password = cams_project
+# ;MODE=MYSQL
+# ;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;INIT=CREATE SCHEMA IF NOT EXISTS cams
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:cams;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    platform: h2
+    username: sa
+    password:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+
+      #spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.H2Dialect
+
+
+
+
+#spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+
+# Hibernate ddl auto (create, create-drop, validate, update)
+#spring.jpa.hibernate.ddl-auto = update
+
+#logging
+logging:
+  level:
+    org:
+      springframework: ERROR
+
+#Application Related
+cams:
+  address:
+    max:
+      rec:
+        limit: 5
+    update:
+      frequency:
+        in:
+          days: 7
+#cams.address.max.rec.limit=5
