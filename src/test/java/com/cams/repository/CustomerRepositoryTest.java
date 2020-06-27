@@ -23,7 +23,7 @@ import static org.hamcrest.Matchers.is;
 @RunWith(SpringRunner.class)
 @DataJpaTest
 @ActiveProfiles("test")
-@TestPropertySource(locations="classpath:application-test.properties")
+@TestPropertySource(locations="classpath:application-test.yml")
 class CustomerRepositoryTest {
 
     @Autowired
