@@ -1,14 +1,14 @@
 plugins {
     id 'org.springframework.boot' version '2.2.2.RELEASE'
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
-    id 'war'
+    id 'maven'
     id 'java'
 }
 
-apply plugin: 'maven'
+//apply plugin: 'maven'
 
 group 'org.cams'
-version '1.0-SNAPSHOT'
+//version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
