@@ -3,7 +3,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.cams</groupId>
     <artifactId>cams-jpa</artifactId>
-    <version>unspecified</version>
 
     <!-- By declaring this parent java version is set to 1.8-->
     <parent>
