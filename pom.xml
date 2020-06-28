@@ -5,6 +5,7 @@
     <artifactId>cams-jpa</artifactId>
     <version>unspecified</version>
 
+    <!-- By declaring this parent java version is set to 1.8-->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -15,77 +16,32 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
-            <scope>compile</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>tomcat-annotations-api</artifactId>
-                    <groupId>org.apache.tomcat</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>protobuf-java</artifactId>
-                    <groupId>com.google.protobuf</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>compile</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>tomcat-annotations-api</artifactId>
-                    <groupId>org.apache.tomcat</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>protobuf-java</artifactId>
-                    <groupId>com.google.protobuf</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <scope>runtime</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>tomcat-annotations-api</artifactId>
-                    <groupId>org.apache.tomcat</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>protobuf-java</artifactId>
-                    <groupId>com.google.protobuf</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-validation</artifactId>
-            <scope>runtime</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>tomcat-annotations-api</artifactId>
-                    <groupId>org.apache.tomcat</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>protobuf-java</artifactId>
-                    <groupId>com.google.protobuf</groupId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
-            <scope>runtime</scope>
-            <exclusions>
-                <exclusion>
-                    <artifactId>tomcat-annotations-api</artifactId>
-                    <groupId>org.apache.tomcat</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>protobuf-java</artifactId>
-                    <groupId>com.google.protobuf</groupId>
-                </exclusion>
-            </exclusions>
+        </dependency>
+        <!--
+
+    compileOnly 'org.projectlombok:lombok:1.18.8'
+    annotationProcessor 'org.projectlombok:lombok:1.18.8'
+    -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
         </dependency>
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
